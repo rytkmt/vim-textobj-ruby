@@ -33,6 +33,11 @@ else
         \      'select-i' : 'iro', '*select-i-function*' : 'textobj#ruby#object_definition_select_i',
         \   },
         \
+        \ 'method' : {
+        \      'select-a' : 'arm', '*select-a-function*' : 'textobj#ruby#method_select_a',
+        \      'select-i' : 'irm', '*select-i-function*' : 'textobj#ruby#method_select_i',
+        \   },
+        \
         \ 'loop' : {
         \      'select-a' : 'arl', '*select-a-function*' : 'textobj#ruby#loop_block_select_a',
         \      'select-i' : 'irl', '*select-i-function*' : 'textobj#ruby#loop_block_select_i',

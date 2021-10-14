@@ -111,6 +111,16 @@ function! textobj#ruby#object_definition_select_a()
 endfunction
 "}}}
 
+" select method
+function! textobj#ruby#method_select_i() " {{{
+    return s:inside(s:search_block('def'))
+endfunction
+
+function! textobj#ruby#method_select_a()
+    return s:search_block('def')
+endfunction
+"}}}
+
 " select loop
 function! textobj#ruby#loop_block_select_i() " {{{
     return s:inside(s:search_block('while\|until\|for'))
