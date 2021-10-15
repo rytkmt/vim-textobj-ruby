@@ -6,7 +6,7 @@ let g:loaded_textobj_ruby_plugin = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-let g:textobj_ruby_mappings = get(g:, 'textobj_ruby_more_mappings', 1)
+let g:textobj_ruby_mappings = get(g:, 'textobj_ruby_mappings', 1)
 let g:textobj_ruby_more_mappings = get(g:, 'textobj_ruby_more_mappings', 0)
 
 if g:textobj_ruby_mappings
