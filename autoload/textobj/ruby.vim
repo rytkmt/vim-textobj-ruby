@@ -111,6 +111,16 @@ function! textobj#ruby#object_definition_select_a()
 endfunction
 "}}}
 
+" select module_class
+function! textobj#ruby#module_class_select_i() "{{{
+    return s:inside(s:search_block('module\|class'))
+endfunction
+
+function! textobj#ruby#module_class_select_a()
+    return s:search_block('module\|class')
+endfunction
+"}}}
+
 " select method
 function! textobj#ruby#method_select_i() " {{{
     return s:inside(s:search_block('def'))
